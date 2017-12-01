@@ -1,0 +1,21 @@
+<mvc:View controllerName="hello.layout.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="Какой-то заголовок">
+				<content>
+					<Panel headerText="Погода в {weather>/query/results/channel/location/country}" class="sapUiResponsiveContentPadding" expandable="true"
+						expanded="true">
+						<content>
+							<core:Fragment id="idXmlFrag" fragmentName="hello.layout.view.weather" type="XML"/>
+							<core:Fragment id="idXmlFrag_ekb" fragmentName="hello.layout.view.weather_ekb" type="XML"/>
+						</content>
+					</Panel>
+					<core:Fragment id="idCbrFrag" fragmentName="hello.layout.view.cbr" type="XML" class="sapUiVisibleOnlyOnDesktop"/>
+					<core:Fragment id="idFormFrag" fragmentName="hello.layout.view.form" type="XML"/>
+                    <core:Fragment id="idFlexFrag" fragmentName="hello.layout.view.flexbox" type="XML"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>hello4_layout</title>
+
+			<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"hello.layout": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			// var oView = sap.ui.view({
+			// 	id: "idMain",
+			// 	viewName: "hello.layout.view.Main",
+			// 	type: sap.ui.core.mvc.ViewType.XML
+			// });
+			
+			
+				sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "hello.layout"
+					})
+				}).placeAt("content");
+			});
+			
+			// oView.placeAt("content");
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+
+</html>

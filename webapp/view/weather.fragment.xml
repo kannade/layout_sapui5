@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Panel headerText="Погода в {weather>/query/results/channel/location/region}" class="sapUiResponsiveContentPadding" expandable="true"
+		expanded="false">
+		<content>
+			<Carousel pages="{weather>/query/results/channel/item/forecast}" width="100%" height="20%">
+				<pages>
+					<f:SimpleForm title="{weather>date}">
+						<f:content>
+							<Label text="Максимальная температура"/>
+							<Text text="{weather>high}"/>
+							<Label text="Минимальная температура"/>
+							<Text text="{weather>low}"/>
+							<Label text="Описание"/>
+							<Text text="{weather>text}"/>
+						</f:content>
+						<f:title>
+							<core:Title text="{weather>/query/results/channel/location/city}"/>
+						</f:title>
+					</f:SimpleForm>
+				</pages>
+			</Carousel>
+			<l:VerticalLayout id="containerLayout_ver"  class="sapUiSmallMargin" width="100%">
+				<l:content>
+					<Label text="{weather>/query/results/channel/item/condition/date}" design="Bold">
+					</Label>
+					<Text text="{weather>/query/results/channel/item/condition/temp}">
+					</Text>
+					<Text text="{weather>/query/results/channel/item/condition/text}">
+					</Text>
+				</l:content>
+			</l:VerticalLayout>
+			
+			<l:HorizontalLayout id="containerLayout_hor" class="sapUiSmallMargin">
+				<l:content>
+					<Label text="{weather>/query/results/channel/item/condition/date}" design="Bold" class="sapUiLargeMarginEnd">
+					</Label>
+					<Text text="{weather>/query/results/channel/item/condition/temp}" class="sapUiLargeMarginEnd">
+					</Text>
+					<Text text="{weather>/query/results/channel/item/condition/text}" class="sapUiLargeMarginEnd">
+					</Text>
+				</l:content>
+			</l:HorizontalLayout>
+		</content>
+	</Panel>
+</core:FragmentDefinition>

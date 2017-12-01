@@ -1,0 +1,120 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<l:VerticalLayout id="containerLayout" width="100%">
+		<l:BlockLayout id="BlockLayout">
+			<l:BlockLayoutRow>
+				<l:BlockLayoutCell title="50% width cell">
+					<Panel headerText="Курс валют на {cbr>/date} относительно {cbr>/base}" class="sapUiResponsiveContentPadding" expandable="true"
+						expanded="true">
+						<content>
+							<l:Grid class="sapUiSmallMarginTop" hSpacing="2" vSpacing="2" defaultSpan="L6 M6 S10">
+								<l:content>
+									<Label text="EUR" width="100%">
+										<layoutData>
+											<l:GridData span="L3 M3 S8" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}" class="nameTitle"/>
+										<Text text="{cbr>/rates/EUR}"/>
+									</VBox>
+									<Label text="RUB" width="100%">
+										<layoutData>
+											<l:GridData span="L3 M3 S8" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/RUB}"/>
+									</VBox>
+									<Label text="AUD" width="100%">
+										<layoutData>
+											<l:GridData span="L3 M3 S8" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/AUD}"/>
+									</VBox>
+									<Label text="BRL" width="100%">
+										<layoutData>
+											<l:GridData span="L3 M3 S8" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/BRL}"/>
+									</VBox>
+									<Label text="BGN" width="100%">
+										<layoutData>
+											<l:GridData span="L3 M3 S8" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/BGN}"/>
+									</VBox>
+								</l:content>
+							</l:Grid>
+						</content>
+					</Panel>
+				</l:BlockLayoutCell>
+				<l:BlockLayoutCell title="50% width cell">
+					<Panel headerText="Курс валют на {cbr>/date} относительно {cbr>/base}" class="sapUiResponsiveContentPadding" expandable="true"
+						expanded="true">
+						<content>
+							<l:Grid class="sapUiSmallMarginTop" hSpacing="2" vSpacing="2" defaultSpan="L6 M6 S10">
+								<l:content>
+									<Label text="EUR" width="100%">
+										<layoutData>
+											<l:GridData span="L4 M4 S4" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}" class="nameTitle"/>
+										<Text text="{cbr>/rates/EUR}"/>
+									</VBox>
+									<Label text="RUB" width="100%">
+										<layoutData>
+											<l:GridData span="L4 M4 S4" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/RUB}"/>
+									</VBox>
+									<Label text="AUD" width="100%">
+										<layoutData>
+											<l:GridData span="L4 M4 S4" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/AUD}"/>
+									</VBox>
+									<Label text="BRL" width="100%">
+										<layoutData>
+											<l:GridData span="L4 M4 S4" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/BRL}"/>
+									</VBox>
+									<Label text="BGN" width="100%">
+										<layoutData>
+											<l:GridData span="L4 M4 S4" linebreakL="true" linebreakM="true" linebreakS="true"/>
+										</layoutData>
+									</Label>
+									<VBox>
+										<Text text="{cbr>/date}"/>
+										<Text text="{cbr>/rates/BGN}"/>
+									</VBox>
+								</l:content>
+							</l:Grid>
+						</content>
+					</Panel>
+				</l:BlockLayoutCell>
+			</l:BlockLayoutRow>
+		</l:BlockLayout>
+	</l:VerticalLayout>
+</core:FragmentDefinition>

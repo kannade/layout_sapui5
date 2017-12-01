@@ -1,0 +1,76 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Panel headerText="Form" id="PanelForm" class="sapUiResponsiveContentPadding" expandable="true" expanded="true">
+		<content>
+			<f:SimpleForm layout="ResponsiveGridLayout" id="idSF" editable="true">
+				<f:content>
+					<core:Title text="Number 1"/>
+					<RadioButton groupName="GroupA" selected="{odata>/enabled}" text="Var1">
+						<layoutData>
+							<l:GridData span="L2 M6 S6"/>
+						</layoutData>
+					</RadioButton>
+					<RadioButton groupName="GroupA" text="Var2">
+						<layoutData>
+							<l:GridData span="L2 M6 S6"/>
+						</layoutData>
+					</RadioButton>
+					<Input enabled="{odata>/enabled}" value="{ path: 'odata>/name', type: 'hello.layout.model.type.digits' }" valueLiveUpdate="true">
+						<layoutData>
+							<l:GridData span="L4 M6 S6"/>
+						</layoutData>
+					</Input>
+					<!--valueLiveUpdate - обновления реал тайм -->
+					<Text text="{odata>/name}">
+						<layoutData>
+							<l:GridData span="L4 M6 S6"/>
+						</layoutData>
+					</Text>
+					<Label text="Num 1" labelFor="first">
+						<layoutData>
+							<l:GridData span="L2 M4 S12"/>
+						</layoutData>
+					</Label>
+					<Input id="first" value="{ path: 'odata>/enabled', type: 'sap.ui.model.type.String', constraints: {minLength : 1, maxLength : 5} }">
+						<layoutData>
+							<l:GridData span="L10 M8 S12"/>
+						</layoutData>
+					</Input>
+					<Label text="Num 2" labelFor="second">
+						<layoutData>
+							<l:GridData span="L2 M4 S12"/>
+						</layoutData>
+					</Label>
+					<Input id="second" value="{ path: 'odata>/date', type: 'sap.ui.model.type.DateTime'}">
+						<layoutData>
+							<l:GridData span="L10 M8 S12"/>
+						</layoutData>
+					</Input>
+					<Label text="Num 3" labelFor="thid">
+						<layoutData>
+							<l:GridData span="L2 M4 S12"/>
+						</layoutData>
+					</Label>
+					<Input id="thid" liveChange="true" value="{
+					path: 'odata>/price',
+					formatter: '.formatter.numberUnit' }">
+						</Input>
+					<ObjectNumber number="{
+					path: 'odata>/price',
+					formatter: '.formatter.numberUnit' }">
+						<layoutData>
+							<l:GridData span="L10 M8 S12"/>
+						</layoutData>
+					</ObjectNumber>
+					<Button text="Submit" icon="sap-icon://paper-plane" press="onPressSubmit">
+						<layoutData>
+							<l:GridData indent="L2 M4" span="L2 M8 S12"/>
+						</layoutData>
+					</Button>
+				</f:content>
+				<f:title>
+					<core:Title text="Simple Form"/>
+				</f:title>
+			</f:SimpleForm>
+		</content>
+	</Panel>
+</core:FragmentDefinition>

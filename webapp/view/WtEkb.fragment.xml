@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout">
+	<Table headerText="Погода Екатеринбург" id="idForecastTable" items="{weather_ekb>/query/results/channel/item/forecast}" growing="true"
+						growingThreshold="4" growingScrollToLoad="false" width="100%" noDataText="No data" mode="None" showSeparators="All">
+		<columns>
+			<Column>
+				<Text text="Дата"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true">
+				<Text text="Максимальная"/>
+			</Column>
+			<Column minScreenWidth="Tablet" demandPopin="true">
+				<Text text="Минимальная"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem press="onTableItemPress" type="Active">
+				<cells>
+					<Text text="{weather_ekb>date}"/>
+					<Text text="{weather_ekb>high}"/>
+					<Text text="{weather_ekb>low}"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>
