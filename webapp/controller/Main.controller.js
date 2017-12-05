@@ -76,6 +76,7 @@ sap.ui.define([
 				MessageToast.show(this.getView().byId("idFormFrag--first").getValue() +
 					" " +
 					this.getView().getModel("odata").getData().name +
+					" " +
 					sap.ui.getCore().byId("__xmlview0--idFormFrag--second").getValue()
 				);
 			}
