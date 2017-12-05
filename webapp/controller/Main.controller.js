@@ -32,7 +32,7 @@ sap.ui.define([
 			this.getView().setModel(oModel_3, "cbr");
 
 			var oData = {
-				"name": "1234",
+				"name": "123456",
 				"enabled": true,
 				"date": new Date(),
 				"price": "12.1"
