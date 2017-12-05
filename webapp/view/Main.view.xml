@@ -4,7 +4,7 @@
 		<pages>
 			<Page title="Какой-то заголовок">
 				<content>
-					<Panel headerText="Погода в {weather>/query/results/channel/location/country}" class="sapUiResponsiveContentPadding" expandable="true"
+					<Panel visible="{device>/phone}" headerText="Погода в {weather>/query/results/channel/location/country}" class="sapUiResponsiveContentPadding" expandable="true"
 						expanded="true">
 						<content>
 							<core:Fragment id="idXmlFrag" fragmentName="hello.layout.view.weather" type="XML"/>

@@ -4,7 +4,7 @@ sap.ui.define([
 	"sap/ui/Device",
 	"hello/layout/model/formatter",
 	"hello/layout/model/type/digits"
-], function(Controller, MessageToast, Device, formatter) {
+], function(Controller, MessageToast, Device, formatter, Digits) {
 	"use strict";
 
 	return Controller.extend("hello.layout.controller.Main", {
