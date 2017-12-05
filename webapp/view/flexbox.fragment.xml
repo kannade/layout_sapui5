@@ -7,7 +7,7 @@
 				</headerToolbar>
 				<FlexBox
 					height="100px"
-					
+					alignItems="Center"
 					justifyContent="Center">
 					<items>
 						<Button text="1" type="Emphasized" class="sapUiSmallMarginEnd" />
