@@ -8,7 +8,7 @@
 			<Column minScreenWidth="Tablet" demandPopin="true">
 				<Text text="Максимальная"/>
 			</Column>
-			<Column minScreenWidth="Tablet" demandPopin="true">
+			<Column minScreenWidth="1024px" demandPopin="true">
 				<Text text="Минимальная"/>
 			</Column>
 		</columns>

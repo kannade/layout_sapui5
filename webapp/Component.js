@@ -22,6 +22,8 @@ sap.ui.define([
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
+			
+			sap.ui.Device.media.initRangeSet(sap.ui.Device.media.RANGESETS.SAP_6STEPS);
 		}
 	});
 });

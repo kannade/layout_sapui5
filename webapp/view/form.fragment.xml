@@ -40,7 +40,7 @@
 							<l:GridData span="L2 M4 S12"/>
 						</layoutData>
 					</Label>
-					<Input id="second" value="{ path: 'odata>/date', type: 'sap.ui.model.type.DateTime'}">
+					<Input id="second" enabled="{= !${device>/system/phone} }" value="{ path: 'odata>/date', type: 'sap.ui.model.type.DateTime'}">
 						<layoutData>
 							<l:GridData span="L10 M8 S12"/>
 						</layoutData>
@@ -61,9 +61,9 @@
 							<l:GridData span="L10 M8 S12"/>
 						</layoutData>
 					</ObjectNumber>
-					<Button text="Submit" icon="sap-icon://paper-plane" press="onPressSubmit">
+					<Button text="Submit" icon="sap-icon://paper-plane" press="onPressSubmit" class="sapUiHideOnTablet">
 						<layoutData>
-							<l:GridData indent="L2 M4" span="L2 M8 S12"/>
+							<l:GridData indent="L2 M4" span="XL12 L2 M8 S12"/>
 						</layoutData>
 					</Button>
 				</f:content>
